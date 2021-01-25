@@ -204,6 +204,29 @@ $(document).ready(function(){
 		})
 	}
 
+	//-------------------------------
+	// My Tickets
+	//-------------------------------
+	if($('.my-tickets .owl-carousel').length){
+		$('.my-tickets .owl-carousel').owlCarousel({
+			loop:true,
+			nav:true,
+			dots:false,
+			autoplay: false,
+			autoplaySpeed: 1000,
+			navSpeed: 1000,
+			items:1,
+			responsive:{
+				0 : {
+					items:1
+				},
+				768 : {
+					items:2
+				}
+			}
+		})
+	}
+
 
 	//-------------------------------
 	// Big gallery
@@ -416,7 +439,7 @@ $(document).ready(function(){
 		function makeTimer() {
 
 			//		var endTime = new Date("29 July 2018 9:56:00 GMT+01:00");
-			var endTime = new Date("29 July 2020 9:56:00 GMT+01:00");
+			var endTime = new Date("29 Feb 2021 9:56:00 GMT+01:00");
 			endTime = (Date.parse(endTime) / 1000);
 
 			var now = new Date();
@@ -433,10 +456,10 @@ $(document).ready(function(){
 			if (minutes < "10") { minutes = "0" + minutes; }
 			if (seconds < "10") { seconds = "0" + seconds; }
 
-			$(".days").html(days + "<span>Days</span>");
-			$(".hours").html(hours + "<span>Hr</span>");
-			$(".minutes").html(minutes + "<span>Min</span>");
-			$(".seconds").html(seconds + "<span>Sec</span>");
+			$(".days").html(days + "<span>天</span>");
+			$(".hours").html(hours + "<span>小時</span>");
+			$(".minutes").html(minutes + "<span>分</span>");
+			$(".seconds").html(seconds + "<span>秒</span>");
 		}
 		setInterval(function() { makeTimer(); }, 1000);
 	}

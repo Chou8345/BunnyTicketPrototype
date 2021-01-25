@@ -316,6 +316,7 @@ a:focus{
   display: inline-flex;
   align-items: center;
   overflow: hidden;
+  font-size: 18px;
 }
 .btn i.btn-icon{
   font-size: 20px;
@@ -743,21 +744,21 @@ body.home .hc-nav-trigger span::after{
 
 /****** Masterhead ******/
 #et-masthead{
-  background-image: url(img/home-masthead.png);
+  background-image: url(img/home-masthead.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
   position: relative;
 }
 #et-masthead-2{
-  background-image: url(img/home-masthead.png);
+  background-image: url(img/home-masthead.jpg);
   background-size: cover;
   background-position: center;
   height: 90vh;
   position: relative;
 }
 #et-masthead-3{
-  background-image: url(img/home-masthead.png);
+  background-image: url(img/home-masthead.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -1306,7 +1307,7 @@ button.owl-prev:hover:before, button.owl-next:hover:before{
   text-align: center;
   border-radius: 4px;
   color: #fff;
-  width: 50px;
+  width: 60px;
   margin: 0.05em;
   font-size: 24px;
   padding: 0.4em 0;
@@ -1316,7 +1317,7 @@ button.owl-prev:hover:before, button.owl-next:hover:before{
   color: initial;
   font-weight: 600;
   margin:0 5px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   padding:0;
 }
@@ -1365,21 +1366,21 @@ button.owl-prev:hover:before, button.owl-next:hover:before{
   top: -30px;
   overflow: hidden;
 }
-.event-Speakers .speaker:hover .content{
+/* .event-Speakers .speaker:hover .content{
   top: -50px;
-}
+} */
 .event-Speakers .speaker .content .social{
   bottom: -100%;
   left: 0;
   right: 0;
   margin: 0 auto;
 }
-.event-Speakers .speaker:hover .content{
+/* .event-Speakers .speaker:hover .content{
   padding-bottom: 40px !important;
 }
 .event-Speakers .speaker:hover .content .social{
   bottom: 10px;
-}
+} */
 .event-Speakers .speaker .content .social a{
   color: initial;
   font-size: 12px;
@@ -1961,7 +1962,7 @@ section#et-notfound{
 
 /*** Big Gallery ***/
 #et-big-gallery{
-  background-image: url("img/home-masthead.png");
+  background-image: url("img/home-masthead.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -2266,4 +2267,33 @@ section#et-notfound{
 #et-latest-news .image-wrap .author-avatar.inner{
 	width: 80px;
     height: 80px;
+}
+
+
+/*** 15-1-2021 Bunnt Ticket***/
+
+.my-tickets .tm{
+  position: absolute;
+  margin-top: -10px;
+  background: #fff;
+  padding-right: 10px;
+}
+.my-tickets p.description{
+  font-size: 14px;
+}
+.my-tickets .owl-nav{
+  position: absolute;
+  top: -70px;
+  right: 0;
+  transform: scale(0.6);
+  transform-origin: right;
+}
+.my-tickets .img-wrapper{
+  height: 200px;
+  overflow: hidden;
+}
+.my-tickets .img-wrapper .badge{
+  right: 10px;
+  top: 10px;
+  z-index: 2;
 }

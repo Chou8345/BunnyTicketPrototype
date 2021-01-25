@@ -135,6 +135,14 @@
 		margin-bottom: 50px;
 	}
 
+	
+	.event-Performers .performer{
+		height: auto;
+	}
+	.event-Performers .performer img{
+		width: 100%;
+	}
+
 }
 
 @media (max-width: 576px) {
