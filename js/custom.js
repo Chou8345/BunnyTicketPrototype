@@ -143,6 +143,27 @@ $(document).ready(function(){
 	}
 
 	//-------------------------------
+	// Fix Side Col
+	//-------------------------------
+	if($(".scroll-side-col").length) {
+		$(window).bind('scroll', function() {
+			var navHeight = $( window ).height() - 70;
+			var contentHeight = $('#et-content').height();
+			console.log(contentHeight);
+			console.log($(window).scrollTop());
+			if ($(window).scrollTop() > navHeight) {
+				$('.scroll-side-col').addClass('fixed');
+			}
+			else {
+				$('.scroll-side-col').removeClass('fixed');
+			}
+			if ($(window).scrollTop() > contentHeight) {
+				$('.scroll-side-col').removeClass('fixed');
+			}
+		});
+	}
+
+	//-------------------------------
 	// Generic Smooth Scroll on Anchor
 	//-------------------------------
 	$(document).on('click', 'a[href^="#"]', function (event) {

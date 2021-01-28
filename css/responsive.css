@@ -21,6 +21,16 @@
 	.et-navbar .nav-actions a{
 		margin-left: 0.5rem;
 	}
+
+
+	/*** 15-1-2021 Bunnt Ticket***/	
+
+	/*** scroll-side-col ***/
+	.scroll-side-col.fixed{
+		/* width: 610px; */
+		display: none;
+	}
+
 }
 @media (max-width: 991px) {
 	#et-location-events .city-thumbnail, #et-location-events .city-content{
@@ -59,6 +69,16 @@
 		position: absolute;
 		clear: both;
 		width: 60%;
+	}
+
+	/*** 15-1-2021 Bunnt Ticket***/	
+
+	/*** scroll-side-col ***/
+	.scroll-side-col.fixed{
+		/* width: 100%;
+		left: 0;
+		text-align: center; */
+		display: none;
 	}
 }
 
@@ -135,11 +155,19 @@
 		margin-bottom: 50px;
 	}
 
+	/*** 15-1-2021 Bunnt Ticket***/	
 	
 	.event-Performers .performer{
 		height: auto;
 	}
 	.event-Performers .performer img{
+		width: 100%;
+	}
+	
+	.profile-Performers .performer{
+		height: auto;
+	}
+	.profile-Performers .speaker img{
 		width: 100%;
 	}
 

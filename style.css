@@ -1180,8 +1180,8 @@ button.owl-prev:hover:before, button.owl-next:hover:before{
 
 /*** Event Masterhead ***/
 #et-event-masthead{
-  background-image: url(img/event-bg.jpg);
-  min-height: 70vh;
+  background-image: url(img/event-banner.jpg);
+  min-height: 50vh;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
@@ -2296,4 +2296,19 @@ section#et-notfound{
   right: 10px;
   top: 10px;
   z-index: 2;
+}
+
+/*** scroll-side-col ***/
+.scroll-side-col.fixed{
+  position: fixed;
+  z-index: 99;
+  left: inherit;
+  top: 15px;
+  width: 350px;
+}
+
+/*** performer ***/
+.profile-Performer .performer .content{
+  top: -30px;
+  overflow: hidden;
 }
